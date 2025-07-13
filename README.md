@@ -1,15 +1,17 @@
-# SafeWorkPay
+# FairPay
 
 A decentralized freelancing platform powered by blockchain and AI to ensure secure, transparent, and fair transactions between clients and freelancers.
 
 ## Project Information
 
 ### Project Name
-**SafeWorkPay**
+
+**FairPay**
 
 ---
 
 ### Problem Statement
+
 - Freelancing platforms often face **payment disputes and trust issues**.
 - Clients may **withhold funds** even when work is completed.
 - Developers may **fail to deliver** after receiving payment.
@@ -19,7 +21,8 @@ A decentralized freelancing platform powered by blockchain and AI to ensure secu
 ---
 
 ### Solution Overview
-- **SafeWorkPay** is a **decentralized freelancing platform** powered by **blockchain and AI**.
+
+- **FairPay** is a **decentralized freelancing platform** powered by **blockchain and AI**.
 - Clients deposit funds into a **smart contract**, which **holds the money in escrow**.
 - **Funds are released** only when **full projects are completed and verified**.
 - An **AI model evaluates the submitted code** against project requirements.
@@ -29,14 +32,14 @@ A decentralized freelancing platform powered by blockchain and AI to ensure secu
 ---
 
 ### Project Description
+
 - Clients can **post projects** and **deposit funds** into smart contracts.
 - Developers **bid** on projects and **submit full projects** as they complete work.
 - If a dispute arises, an **AI Agent** checks the **completeness of code** based on requirements and completion percentage; funds are released to the developer and remaining to the client.
 
-
 ## 📸 Screenshots
 
-Below are screenshots showcasing different pages and functionalities of **SafeWorkPay**. These images are placeholders from the `public` folder.
+Below are screenshots showcasing different pages and functionalities of **FairPay**. These images are placeholders from the `public` folder.
 
 ---
 
@@ -138,9 +141,10 @@ Below are screenshots showcasing different pages and functionalities of **SafeWo
 
 ## Installation and Running the Frontend
 
-To run the SafeWorkPay frontend, follow these steps:
+To run the FairPay frontend, follow these steps:
 
 1. **Install Dependencies**
+
    ```bash
    yarn
    ```
@@ -151,11 +155,14 @@ To run the SafeWorkPay frontend, follow these steps:
    ```
 
 **Note**: The smart contracts are already deployed on the Sepolia testnet at the following addresses:
+
 - DappWorks: `0xE9F9bcD880e71FFD32F64D874Fa889c7163CDb7d`
 - USDT: `0xb2d7EFb7393fcFCC7C76dcA5da05c8177bA1F6fF`
 
 **Environment Setup**: Make sure to add your MetaMask private key, CometChat credentials, and RPC URL in the `.env` file for the application to function correctly.
+
 #### add the environment variables in the .env file
+
 ```
  REACT_APP_COMET_CHAT_APP_ID=
  REACT_APP_COMET_CHAT_AUTH_KEY=
@@ -163,7 +170,7 @@ To run the SafeWorkPay frontend, follow these steps:
  REACT_APP_RPC_URL=http://127.0.0.1:8545
  SEPOLIA_RPC_URL=
  PRIVATE_KEY=
- 
+
 ```
 
 ## Running the AI Agent
@@ -182,8 +189,9 @@ The AI Agent is a separate component that assists in dispute resolution by evalu
    - Start the frontend:
      ```bash
      yarn start
+     ```
 
- change file name .env.example to .env and add the environment variables in the .env file in frontend directory.
+change file name .env.example to .env and add the environment variables in the .env file in frontend directory.
 
 2. **Backend Setup for AI Agent**
    - Navigate to the backend directory of the AI Agent:
@@ -217,8 +225,8 @@ The AI Agent is a separate component that assists in dispute resolution by evalu
 - **Chat**: Real-time messaging between clients and freelancers is facilitated via CometChat.
 - **Dispute Resolution**: A unique feature where AI aids in fair resolution, ensuring partial payments for partial work.
 
-For any issues or contributions, please open an issue or pull request on this repository. We welcome feedback to improve SafeWorkPay!
+For any issues or contributions, please open an issue or pull request on this repository. We welcome feedback to improve FairPay!
 
 ---
 
-*Built with ❤️ by the SafeWorkPay team*
+_Built with ❤️ by the FairPay team_

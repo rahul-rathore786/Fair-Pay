@@ -1,15 +1,15 @@
-import React from 'react'
+import React from "react";
 import { FaPlus, FaSearch, FaBriefcase, FaArrowRight } from "react-icons/fa";
-import { useGlobalState, setGlobalState } from '../store';
-import JobListingCard from './JobListingCard'
+import { useGlobalState, setGlobalState } from "../store";
+import JobListingCard from "./JobListingCard";
 
 const Hero = () => {
-  const [jobs] = useGlobalState('jobs')
-  const [connectedAccount] = useGlobalState('connectedAccount')
+  const [jobs] = useGlobalState("jobs");
+  const [connectedAccount] = useGlobalState("connectedAccount");
 
   const openModal = () => {
-    setGlobalState("createModal", "scale-100")
-  }
+    setGlobalState("createModal", "scale-100");
+  };
 
   return (
     <section>
@@ -20,17 +20,19 @@ const Hero = () => {
           <div className="absolute top-10 right-10 w-56 h-56 bg-white rounded-full blur-3xl"></div>
           <div className="absolute bottom-10 right-1/3 w-64 h-64 bg-white rounded-full blur-3xl"></div>
         </div>
-        
+
         <div className="max-w-7xl mx-auto relative z-10">
           <div className="text-center md:text-left md:max-w-xl lg:max-w-2xl">
             <h1 className="text-4xl md:text-5xl font-display font-bold mb-4 leading-tight">
-              Secure Freelance Work with <span className="text-accent-300">Blockchain Payments</span>
+              Secure Freelance Work with{" "}
+              <span className="text-accent-300">Blockchain Payments</span>
             </h1>
             <p className="text-lg opacity-90 mb-8">
-              Find, hire, and pay freelancers securely using SafeWorkPay's blockchain escrow system.
-              No middlemen, just safe and secure transactions.
+              Find, hire, and pay freelancers securely using FairPay's
+              blockchain escrow system. No middlemen, just safe and secure
+              transactions.
             </p>
-            
+
             <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
               {connectedAccount ? (
                 <button
@@ -65,7 +67,7 @@ const Hero = () => {
               <div className="text-gray-500 text-sm">Active Projects</div>
             </div>
           </div>
-          
+
           <div className="card bg-white p-4 flex items-center shadow-elevated">
             <div className="w-12 h-12 rounded-full bg-secondary-100 flex items-center justify-center text-secondary-600 mr-4">
               <FaBriefcase className="text-xl" />
@@ -75,7 +77,7 @@ const Hero = () => {
               <div className="text-gray-500 text-sm">Secure Payments</div>
             </div>
           </div>
-          
+
           <div className="card bg-white p-4 flex items-center shadow-elevated">
             <div className="w-12 h-12 rounded-full bg-accent-100 flex items-center justify-center text-accent-600 mr-4">
               <FaBriefcase className="text-xl" />
@@ -91,9 +93,11 @@ const Hero = () => {
         <div className="mb-16">
           <div className="flex justify-between items-center mb-6">
             <h2 className="text-2xl font-display font-bold text-gray-800">
-              {jobs.length > 0 ? "Latest Job Listings" : "No Jobs Available Yet"}
+              {jobs.length > 0
+                ? "Latest Job Listings"
+                : "No Jobs Available Yet"}
             </h2>
-            
+
             <button className="text-primary-600 hover:text-primary-700 flex items-center gap-1 text-sm font-medium">
               View All <FaArrowRight className="text-xs" />
             </button>
@@ -102,10 +106,7 @@ const Hero = () => {
           {jobs.length > 0 ? (
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
               {jobs.map((job, i) => (
-                <JobListingCard
-                  key={i}
-                  jobListing={job}
-                />
+                <JobListingCard key={i} jobListing={job} />
               ))}
             </div>
           ) : (
@@ -115,9 +116,13 @@ const Hero = () => {
               </div>
               <h3 className="text-xl font-medium mb-2">No job listings yet</h3>
               <p className="text-gray-500 mb-6">
-                Be the first to post a job on our platform and connect with talented freelancers.
+                Be the first to post a job on our platform and connect with
+                talented freelancers.
               </p>
-              <button onClick={openModal} className="btn-primary inline-flex items-center gap-2">
+              <button
+                onClick={openModal}
+                className="btn-primary inline-flex items-center gap-2"
+              >
                 <FaPlus /> Post a Job
               </button>
             </div>
@@ -135,6 +140,6 @@ const Hero = () => {
       </button>
     </section>
   );
-}
+};
 
-export default Hero
+export default Hero;
