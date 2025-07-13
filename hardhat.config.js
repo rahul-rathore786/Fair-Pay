@@ -4,6 +4,7 @@ require('dotenv').config();
 // Remove 0x prefix if present so Hardhat gets plain hex string
 const PRIVATE_KEY = (process.env.PRIVATE_KEY || '').replace(/^0x/, '');
 const SEPOLIA_RPC_URL = process.env.SEPOLIA_RPC_URL || '';
+const BNB_TESTNET_RPC_URL = process.env.BNB_TESTNET_RPC_URL || '';
 
 module.exports = {
   solidity: {
@@ -23,6 +24,12 @@ module.exports = {
       url: SEPOLIA_RPC_URL,
       accounts: PRIVATE_KEY ? [`0x${PRIVATE_KEY}`] : [],
       chainId: 11155111,
+    },
+    // add bnb testnet
+    bnb_testnet: {
+      url: BNB_TESTNET_RPC_URL,
+      accounts: PRIVATE_KEY ? [`0x${PRIVATE_KEY}`] : [],
+      chainId: 97,
     },
   },
   paths: {

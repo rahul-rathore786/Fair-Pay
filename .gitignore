@@ -35,3 +35,5 @@ userinput.py
 cache
 .windsurf
 project-workflow.md
+src\contracts\DappWorks.sol
+src\contracts\USDT.sol
