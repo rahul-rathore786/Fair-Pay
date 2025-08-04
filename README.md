@@ -2,6 +2,16 @@
 
 A decentralized freelancing platform powered by blockchain and AI to ensure secure, transparent, and fair transactions between clients and freelancers.
 
+## submission information
+
+Submited to the TechFairness hackathon 2025
+
+link https://www.hackquest.io/projects/Fair-Pay
+
+live link https://fair-pay-freelancing.vercel.app/
+
+youtube video https://www.youtube.com/watch?v=C-gQ17mcFEM
+
 ## Project Information
 
 ### Project Name
