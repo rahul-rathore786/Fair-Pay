@@ -69,6 +69,10 @@ Below are screenshots showcasing different pages and functionalities of **FairPa
 
 ### 4. 💼 Bidding Interface
 
+![Place a bid](public/place-bid.png)
+
+> View bids on a project.
+
 ![Bidding](public/view-bids.png)
 
 > clients can view bids placed on their projects.
@@ -82,6 +86,12 @@ Below are screenshots showcasing different pages and functionalities of **FairPa
 > Freelancers can see all the projects they have assigned.
 
 ---
+
+<!-- submit-project -->
+
+![Submit Project](public/submit.png)
+
+> Freelancers can submit their projects.
 
 ### 6. 📁 My Projects
 
